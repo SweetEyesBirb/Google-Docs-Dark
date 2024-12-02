@@ -1,0 +1,18 @@
+{
+    "manifest_version": 3,
+    "name": "Dark Mode for Google Docs and Google Sheets",
+    "version": "1.0.0",
+    "description": "Enable dark mode on Google Docs or Google Sheets",
+    "permissions": ["activeTab", "scripting", "tabs"],
+    "host_permissions": ["*://docs.google.com/*"],
+    "action": {
+      "default_popup": "source/popup.html"
+    },
+    "content_scripts": [
+      {
+        "matches": ["*://docs.google.com/*"],
+        "js": ["source/popup.js"],
+        "html":["source/popup.html"]
+      }
+    ]
+  }

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Docs Dark Extension Popup</title>
+
+    <link rel="stylesheet" href="popup.css">
+    <script src="popup.js" defer></script>
+</head>
+
+<body id="popup-body">
+    <div id="main-div">
+        <h1 id="title">Google Docs Dark</h1>
+        <div id="options">
+            <div id="toggle-dark-container">
+                <h3 class="option-title">Toggle Dark/Light Mode</h3>
+                <!-- Rounded switch -->
+                <label class="switch">
+                    <input id="toggle-page" class="toggle-input" aria-label="toggle-dark-mode-on-webpage" type="checkbox">
+                    <span class="slider round"></span>
+                </label>
+            </div>
+            <div id="toggle-doc-container">
+                <h3 class="option-title">Toggle Dark/Light Mode on Document</h3>
+                <!-- Rounded switch -->
+                <label class="switch">
+                    <input id="toggle-doc" class="toggle-input" aria-label="toggle-dark-mode-on-document" type="checkbox">
+                    <span class="slider round"></span>
+                </label>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
